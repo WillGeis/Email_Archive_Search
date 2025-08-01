@@ -22,6 +22,6 @@ def extract_pdfs_from_msg_files(root_directory, pdf_archive_directory):
                         print(f"Extracted {attachment.longFilename} to {pdf_archive_directory}")
 
 if __name__ == "__main__":
-    root_directory = r'C:\\Users\\u235211\\OneDrive - Trane Technologies\\Desktop\\Stuff\\CustOnbMDMS\\####EMAIL BACKUPS'
-    pdf_archive_directory = r'C:\\Users\\u235211\\Documents\\Email_Archive_Search\\pdf_archive'
+    root_directory = r'C:\\Users\\u235211\\Documents\\Stuff\\CustOnbMDMS\\####EMAIL BACKUPS'
+    pdf_archive_directory = r'C:\\Users\\u235211\\Documents\\Stuff\\CustOnbMDMS\\####PDF_ARCHIVE'
     extract_pdfs_from_msg_files(root_directory, pdf_archive_directory)
