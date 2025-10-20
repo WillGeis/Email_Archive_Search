@@ -1,9 +1,9 @@
 @echo off
-REM
+REM Change to the script's directory
+cd /d "%~dp0"
 
-REM Creates temp python script to check dependancies
-set TEMP_PY=%TEMP%\check_deps_temp.py
-
+REM Creates temp python script to check dependencies
+set TEMP_PY=%TEMP%\\\\check_deps_temp.py
 echo import subprocess > "%TEMP_PY%"
 echo import sys >> "%TEMP_PY%"
 echo required = ["extract_msg","easyocr","pdf2image","Pillow"] >> "%TEMP_PY%"
@@ -23,5 +23,4 @@ del "%TEMP_PY%"
 
 REM run main
 python ./core/Windowbuilder.py
-
 pause

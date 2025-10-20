@@ -20,6 +20,12 @@ def OCR_folder(folder_path):
     os.makedirs(output_non_W9_pdf, exist_ok=True)
 
     poppler_path = os.path.join(os.getcwd(), "poppler", "poppler-25.07.0", "Library", "bin")
+
+    if not os.path.exists(poppler_path):
+        print(f"Poppler path does not exist: {poppler_path}")
+        print("Defaulting to system's PATH for Poppler.")
+        poppler_path = None
+
     reader = easyocr.Reader(['en'])
 
     for filename in os.listdir(folder_path):
