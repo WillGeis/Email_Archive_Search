@@ -1,5 +1,7 @@
 # Email Archive Search
 
+*Note that this says that it is mostly C, that is just because of popplar portable library. This project is mostly in python*
+
 A comprehensive email and PDF archive management solution designed to bridge the gap between stakeholder communications and enterprise database systems. This tool empowers data entry, management, and governance teams to efficiently organize and process email archives for seamless integration with ERP/CRM platforms.
 
 ## Overview
